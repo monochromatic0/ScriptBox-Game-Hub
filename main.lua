@@ -1,12 +1,12 @@
 if game.PlaceId == 155615604 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Prison Life", "Sentinel")
+    local Window = Library.CreateLib("ScriptBox: Prison Life", "Synapse")
 
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
 
-    MainSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47"}, function(v)
+    MainSection:NewDropdown("Give Gun", "Gives the localplayer a gun", {"M9", "Remington 870", "AK-47", "M4A1"}, function(v)
         local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
         local Event = game:GetService("Workspace").Remote.ItemHandler
         Event:InvokeServer(A_1)
@@ -45,7 +45,7 @@ if game.PlaceId == 155615604 then
     end)
 elseif game.PlaceId == 3956818381 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Ninja Legends", "Sentinel")
+    local Window = Library.CreateLib("ScriptBox: Ninja Legends", "Synapse")
 
     -- MAIN
     local Main = Window:NewTab("Main")
